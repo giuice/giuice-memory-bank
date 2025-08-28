@@ -3,10 +3,11 @@
 A simple, scalable system for managing software projects that ANY AI can follow.
 
 ## Agent Mode (Copilot Chat)
-- Agent Mode is a GitHub Copilot Chat feature that lets you configure modes (specialized behavior) per repository.
-- This system works by pointing Copilot Chat to `.github/copilot-instructions.md` and the `memory-bank/` folder. The plugins guide the AI through Setup → Strategy → Execution.
+- This system works by pointing GitHub Copilot Chat to `.github/copilot-instructions.md` and the `memory-bank/` folder. The plugins guide the AI through Setup → Strategy → Execution.
 - Keep filenames exactly as referenced in the plugins. The AI will create and update the needed tracking files for you.
-
+- Agent Mode is a GitHub Copilot Chat feature that lets you configure modes (specialized behavior) per repository.
+- For improved mode you can set 3 modes on GitHub Copilot chat: `Setup Mode`, `Strategy Mode` and finaly `Execution Mode`, using respectives files on [plugins folder](`memory-bank/plugins/`)  
+  
 ## Core Philosophy
 - **Fewer files** = Less confusion
 - **Simple formats** = Better understanding  
