@@ -8,6 +8,25 @@ A simple, scalable system for managing software projects that ANY AI can follow.
 - **Clear progression** = Predictable workflow
 - **Scalable structure** = Handles 10 or 1000 tasks
 
+## Quick Start Guide
+
+### Initial Setup
+1. **Configure your AI system prompt**
+   - Copy the [memory-bank](`memory-bank`) folder to your project root
+   - In VS Code, create a `.github` folder in your project
+   - Save the [Core System Prompt](memory-bank/plugins/core_system_prompt.md) as `copilot-instructions.md`
+
+2. **Use the provided templates**
+   - Check the [templates folder](`memory-bank/templates`) for examples of:
+     - `product.md` - What you're building
+     - `structure.md` - Where files go
+     - `tech.md` - How you build it
+
+3. **Optional: Create GitHub Copilot Modes**
+   - Use each plugin (setup, strategy, execution) to create specialized modes
+   - This improves AI performance for each specific phase
+  
+
 ## File Structure
 ```
 project-root/
@@ -142,24 +161,6 @@ tasks/
 - **No conflicts** - Each feature has own file
 - **Clear ownership** - Assign features to people
 - **Simple merging** - Less chance of git conflicts
-
-## Quick Start Guide
-
-### Initial Setup
-1. **Configure your AI system prompt**
-   - Copy the [memory-bank](`memory-bank`) folder to your project root
-   - In VS Code, create a `.github` folder in your project
-   - Save the [Core System Prompt](memory-bank/plugins/core_system_prompt.md) as `copilot-instructions.md`
-
-2. **Use the provided templates**
-   - Check the [templates folder](`memory-bank/templates`) for examples of:
-     - `product.md` - What you're building
-     - `structure.md` - Where files go
-     - `tech.md` - How you build it
-
-3. **Optional: Create GitHub Copilot Modes**
-   - Use each plugin (setup, strategy, execution) to create specialized modes
-   - This improves AI performance for each specific phase
 
 ### Getting Started by Phase
 
