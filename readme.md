@@ -2,22 +2,32 @@
 
 A simple, scalable system for managing software projects that ANY AI can follow.
 
+## Agent Mode (Copilot Chat)
+- Agent Mode is a GitHub Copilot Chat feature that lets you configure modes (specialized behavior) per repository.
+- This system works by pointing Copilot Chat to `.github/copilot-instructions.md` and the `memory-bank/` folder. The plugins guide the AI through Setup → Strategy → Execution.
+- Keep filenames exactly as referenced in the plugins. The AI will create and update the needed tracking files for you.
+
 ## Core Philosophy
 - **Fewer files** = Less confusion
 - **Simple formats** = Better understanding  
 - **Clear progression** = Predictable workflow
 - **Scalable structure** = Handles 10 or 1000 tasks
 
+## One‑Minute TL;DR
+1) Copy the `memory-bank/` folder into your project root.
+2) In VS Code, create `.github/copilot-instructions.md` by copying `memory-bank/plugins/core_system_prompt.md`.
+3) Start chatting with Copilot Chat in “Agent Mode” — the AI will create and maintain the rest (rules, tasks, context) following the plugins.
+
 ## Quick Start Guide
 
 ### Initial Setup
 1. **Configure your AI system prompt**
-   - Copy the [memory-bank](`memory-bank`) folder to your project root
+   - Copy the [memory-bank](memory-bank/) folder to your project root
    - In VS Code, create a `.github` folder in your project
    - Save the [Core System Prompt](memory-bank/plugins/core_system_prompt.md) as `copilot-instructions.md`
 
 2. **Use the provided templates**
-   - Check the [templates folder](`memory-bank/templates`) for examples of:
+   - Check the [templates folder](memory-bank/templates/) for examples of:
      - `product.md` - What you're building
      - `structure.md` - Where files go
      - `tech.md` - How you build it
@@ -30,15 +40,15 @@ A simple, scalable system for managing software projects that ANY AI can follow.
 ## File Structure
 ```
 project-root/
-├── memorybankrules.md        # Current phase tracker
+├── memorybankrules.md        # Current phase tracker (AI creates/updates)
 └── memory-bank/
     ├── product.md            # What we're building
     ├── structure.md          # Where files go
     ├── tech.md               # How we build
-    ├── activeContext.md      # Current state
-    ├── dependencytracker.md  # File relationships
+   ├── activeContext.md      # Current state (AI creates/updates)
+   ├── dependencytracker.md  # File relationships (AI creates/updates)
     └── tasks/
-        ├── index.md          # Feature overview
+      ├── index.md          # Feature overview (AI creates/updates)
         ├── auth_implementation.md
         ├── dashboard_setup.md
         └── [feature]_implementation.md
