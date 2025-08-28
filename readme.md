@@ -143,26 +143,48 @@ tasks/
 - **Clear ownership** - Assign features to people
 - **Simple merging** - Less chance of git conflicts
 
-## Quick Start Guid
+## Quick Start Guide
 
-A. **Set your system prompt with Core System Prompt [Core System Prompt](memory-bank/plugins/core_system_prompt.md)**
-- On Vscode github copilot create `.github` folder and save core [Core System Prompt](memory-bank/plugins/core_system_prompt.md) with the name copilot-instructions.md
-- I included in [Template Folder] (`memory-bank/templates`) product, structure and tech examples
-- You can create Github Copilot Modes with each plugin(setup, strategy and execution) this is improve the work on exactly phase.
+### Initial Setup
+1. **Configure your AI system prompt**
+   - Copy the [memory-bank](`memory-bank`) folder to your project root
+   - In VS Code, create a `.github` folder in your project
+   - Save the [Core System Prompt](memory-bank/plugins/core_system_prompt.md) as `copilot-instructions.md`
 
-1. **First time?** Start in Setup phase:
-   - Create the basic structure
-   - Move to Strategy
+2. **Use the provided templates**
+   - Check the [templates folder](`memory-bank/templates`) for examples of:
+     - `product.md` - What you're building
+     - `structure.md` - Where files go
+     - `tech.md` - How you build it
 
-2. **Planning work?** Strategy phase:
-   - List features in index.md
-   - Create feature files with tasks
-   - Move to Execution
+3. **Optional: Create GitHub Copilot Modes**
+   - Use each plugin (setup, strategy, execution) to create specialized modes
+   - This improves AI performance for each specific phase
 
-3. **Ready to code?** Execution phase:
-   - Pick a feature
-   - Work through tasks
-   - Check them off
+### Getting Started by Phase
+
+#### First Time Setup
+1. Start with the **Setup phase**
+   - Create the basic project structure
+   - Identify your code directories
+   - Note basic dependencies
+2. Move to **Strategy phase** when ready
+
+#### Planning Your Work
+1. Use the **Strategy phase**
+   - List all features in `tasks/index.md`
+   - Create individual `tasks/[feature]_implementation.md` files
+   - Break down features into concrete tasks with checkboxes
+   - Set priorities for execution
+2. Move to **Execution phase** when planning is complete
+
+#### Ready to Code
+1. Use the **Execution phase**
+   - Pick a feature from `tasks/index.md`
+   - Work through unchecked tasks in the feature file
+   - Mark completed tasks with `[x]`
+   - Update progress tracking
+   - Move to the next feature when done
 
 ## Common Patterns
 
